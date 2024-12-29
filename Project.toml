@@ -3,7 +3,13 @@ uuid = "5d549225-f42e-44e8-bbe6-1b18918ce7a0"
 authors = ["georgeg <georgegi86@gmail.com> and contributors"]
 version = "1.0.0-DEV"
 
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+TimeSeries = "9e3dc215-6440-5c97-bce1-76c03772f85e"
+
 [compat]
+DataFrames = "1.7.0"
+TimeSeries = "0.24.2"
 julia = "1.6.7"
 
 [extras]
