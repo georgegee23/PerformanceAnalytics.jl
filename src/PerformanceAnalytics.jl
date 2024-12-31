@@ -1,13 +1,15 @@
 module PerformanceAnalytics
 
-    export returns_to_prices, pct_change, drawdowns, annual_return, annual_stdev 
-    export annual_sharpe_ratio, downside_deviation, sortino_ratio, max_drawdown 
-    export down_capture, up_capture, overall_capture, performance_table
+    using TimeSeries
+    using DataFrames
+
+    export returns_to_prices, pct_change, drawdowns, annual_return, annual_stdev, 
+        annual_sharpe_ratio, downside_deviation, sortino_ratio, max_drawdown, 
+        down_capture, up_capture, overall_capture, performance_table
 
 ########################################## Performance Analytics ###########################################################
 
-using TimeSeries
-using DataFrames
+
 
 #---------------------------------------------------------------------------------
 
