@@ -1,5 +1,8 @@
 module PerformanceAnalytics
 
+    export returns_to_prices, pct_change, drawdowns, annual_return, annual_stdev 
+    export annual_sharpe_ratio, downside_deviation, sortino_ratio, max_drawdown 
+    export down_capture, up_capture, overall_capture, performance_table
 
 ########################################## Performance Analytics ###########################################################
 
@@ -43,7 +46,7 @@ function returns_to_prices(returns::TimeArray, init_value::Int = 1)
 end
 
 
-function pct_change(prices::TimeArray, window::Int64)
+function pct_change(prices::TimeArray, window::Int64=1)
 
 
     """
